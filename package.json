@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "description": "Production-ready multi-tenant digital loyalty platform for restaurants and cafes",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
+    "build": "npm --prefix frontend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build:backend": "npm --prefix backend run build",
     "test:db": "node --import tsx tests/database/runner.ts"
   },
   "devDependencies": {
