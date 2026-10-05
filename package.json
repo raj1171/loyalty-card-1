@@ -1,0 +1,15 @@
+{
+  "name": "loyalty-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-ready multi-tenant digital loyalty platform for restaurants and cafes",
+  "scripts": {
+    "test:db": "node --import tsx tests/database/runner.ts"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.0"
+  }
+}
